@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online Product Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+    }
+
+    header {
+      background-color: #4682b4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Slideshow styles */
+    .slideshow-container {
+      max-width: 100%;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 70px;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      animation: fade 16s infinite;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .slide:nth-child(2) {
+      animation-delay: 4s;
+    }
+
+    .slide:nth-child(3) {
+      animation-delay: 8s;
+    }
+
+    .slide:nth-child(4) {
+      animation-delay: 12s;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      25% {
+        opacity: 1;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    section {
+      padding: 40px 20px;
+      margin: 20px;
+      background-color: #e0ffff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    
+
+    /* Responsive Design */ @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        max-width: 100%;
+        height: 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#laptops">Laptops</a>
+    <a href="#mobiles">Mobiles</a>
+    <a href="#routers">WiFi Routers</a>
+    <a href="#pendrives">Pendrives</a>
+  </nav>
+  <header>
+    <h1>List of Products</h1>
+  </header>
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="slide"><img src="https://www.bing.com/aclick?ld=e8r95bhELkS4AHBXsLco_5YzVUCUy-jjaXv4gvxhQM-0OMF6TIij4DPvk_S3aUS-ilKCM2xaITabIuHcR2c6DD6egltA32tv93cNhpTELaPUbVFW_0NPWnFH5z4VMaL-HHpfmODcbXZFYBYx8qZv7cqIxieTIdPPxgZScoVsx_T6KjnPYZ--5PN5U6nW5TThWV8Ih0cw&u=aHR0cHMlM2ElMmYlMmZ3d3cubGVub3ZvLmNvbSUyZmluJTJmZW4lMmZwJTJmbGFwdG9wcyUyZmlkZWFwYWQlMmZpZGVhcGFkLXMtc2VyaWVzJTJmaWRlYXBhZC0zaS1nZW4tNy0xNS1pbmNoLWludGVsJTJmODJyazAxOWRpbiUzZmNpZCUzZGluJTNhc2VtJTNha2I0eTU1JTI2bXNjbGtpZCUzZDJkODIyYjg1YTYxZjExMGZiZmY0NDMxYzEzZDUzNWZmJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkSU5fSU5fTEVOX0JBVV9DQ0ZfU0VNX01JQ19QTUFYX0NPTlNfQkZfUkVWX05BX0Fsd2F5c09uJTI2dXRtX3Rlcm0lM2QyMzI1ODEwNjkwODk2ODMxJTI2dXRtX2NvbnRlbnQlM2RNVE0lMjUyMC0lMjUyMENvbnMlMjUyMC0lMjUyMElkZWFQYWQlMjUyMC0lMjUyMEludGVsJTI1MjAtJTI1MjBBc3NldHNfR2VuZXJpYyUyNTIwU2FsZSUyNTIwM3JkJTI1MjBGZWIlMjUyMDIwMjU&rlid=2d822b85a61f110fbff4431c13d535ff&ntb=1" alt="Laptops"></div>
+    <div class="slide"><img src="https://www.bing.com/images/search?view=detailV2&ccid=pCWe0Xlm&id=3BA408A6ED51822DA6E5405C2532C97153F6384B&thid=OIP.pCWe0XlmUQD9WORY4jsW8AHaGs&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.a4259ed179665100fd58e458e23b16f0%3frik%3dSzj2U3HJMiVcQA%26riu%3dhttp%253a%252f%252fg-ecx.images-amazon.com%252fimages%252fG%252f01%252fwireless%252fdetail-page%252fsamsung-galaxynexus-veriz-angle-lg.jpg%26ehk%3d6RkNUjq6H0KlXGq0eViLdGnBG3j%252fsKfg2fOI93ZjTD0%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1086&expw=1200&q=mobile+phone&simid=607996623875416520&FORM=IRPRST&ck=5E9B60C345B40C07AB04C74440B24513&selectedIndex=0&itb=0" alt="Mobiles"></div>
+    <div class="slide"><img src="https://www.bing.com/images/search?view=detailV2&ccid=91WTEajK&id=51C116F49309C7144D03B4B4BB2C6FCE6BED5C24&thid=OIP.91WTEajK8_8rrZD-AbOyuQHaGv&mediaurl=https%3a%2f%2fi5.walmartimages.com%2fasr%2f5013f68e-b8c6-4536-9f4f-0750fe03c428.fe05bab0443095588e65acb96497419b.jpeg&exph=1366&expw=1500&q=wifi+router&simid=608032091691620881&FORM=IRPRST&ck=759F52478FFDB6E5567B957704B6F240&selectedIndex=0&itb=0" alt="WiFi Routers"></div>
+    <div class="slide"><img src="https://www.bing.com/images/search?view=detailV2&ccid=h6pl%2fVhr&id=D35A91D98A6A40BAF467C0ACFB3F196F5A599A15&thid=OIP.h6pl_VhrHkt3__6Bo-yyQgHaHa&mediaurl=https%3a%2f%2fm.media-amazon.com%2fimages%2fI%2f71qOWNxv4jL.jpg&exph=2560&expw=2560&q=pendrive&simid=608014886083521478&FORM=IRPRST&ck=1AA5A155532D293B35F86CBDF37A75CB&selectedIndex=0&itb=0" alt="Pendrives"></div>
+  </div>
+  <section id="laptops">
+    <a href="laptops.html" target="empty">Laptops</a>
+    <p>Explore the latest and top-performing laptops in India.</p>
+  </section>
+  <section id="mobiles">
+    <a href="mobiles.html" target="empty">Mobiles</a>
+    <p>Check out the best mobile phones available in the Indian market.</p>
+  </section>
+  <section id="routers">
+    <a href="wifirouters.html" target="empty">WiFi Routers</a>
+    <p>Browse our collection of high-speed WiFi routers.</p>
+  </section>
+  <section id="pendrives">
+    <a href="pendrives.html" target="empty">Pendrives</a>
+    <p>Affordable and reliable USB flash drives of all capacities.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Online Product Store | Contact: abc@gmail.com</p>
+  </footer>
+</body>
+
+</html>
